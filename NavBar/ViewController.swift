@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var NavBar: UINavigationBar!
+    
+    @IBAction func addButton(_ sender: Any) {
+        print("add button pressed")
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
+       
+
     }
 
-
 }
-
