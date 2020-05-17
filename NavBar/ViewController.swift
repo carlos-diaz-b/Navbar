@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     func NavBarOpen (){
         UIView .animate(withDuration:0.3){
-            let open = CGAffineTransform(rotationAngle: 40)
+            let open = CGAffineTransform(rotationAngle: 88)
             self.Button.target = open as AnyObject
             
         }
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     func NavBarClosed () {
         UIView.animate(withDuration:0.3){
-            self.Height.constant  = 88
+            self.Height.constant  = 40
             let closed =
                 CGAffineTransform(rotationAngle: 0)
             self.Button.target = closed as AnyObject
