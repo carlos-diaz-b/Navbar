@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xjV-hT-bNS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,20 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eom-aV-Wdy">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MxQ-jh-DO1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="65A-3Y-Asm"/>
+                                    <constraint firstAttribute="height" constant="44" id="by7-IM-yXq"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.90672588832487311" green="0.90672588832487311" blue="0.90672588832487311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </textAttributes>
                                 <items>
-                                    <navigationItem title="SNACKS" id="2Gr-ui-wDC">
-                                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="9Vj-mq-apC">
+                                    <navigationItem title="SNACKS" id="RPQ-Z7-IlS">
+                                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="lSs-ef-MAz">
                                             <connections>
-                                                <action selector="addButton:" destination="BYZ-38-t0r" id="uyd-Ld-Sjl"/>
+                                                <action selector="AddButton:" destination="BYZ-38-t0r" id="NeU-W6-8iC"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -38,33 +35,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="K1F-Kw-Szw"/>
                     <connections>
-                        <outlet property="NavBar" destination="Eom-aV-Wdy" id="MVT-Zo-rhm"/>
-                        <outlet property="navBar" destination="Eom-aV-Wdy" id="639-t6-6mh"/>
+                        <outlet property="Button" destination="lSs-ef-MAz" id="qgi-Oj-Xkr"/>
+                        <outlet property="Height" destination="by7-IM-yXq" id="GWb-jC-9H7"/>
+                        <outlet property="NavBar" destination="MxQ-jh-DO1" id="tnV-GN-ZVR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="pfM-Kp-BWe">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xjV-hT-bNS" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Gk-Wk-rZR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZhS-SE-AFl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gvz-h9-MPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>

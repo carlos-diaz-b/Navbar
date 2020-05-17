@@ -11,19 +11,43 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var NavBar: UINavigationBar!
+    @IBOutlet var Button: UIBarButtonItem!
+    @IBOutlet var Height: NSLayoutConstraint!
+    var consclosed = true
     
-    @IBAction func addButton(_ sender: Any) {
-        print("add button pressed")
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
+      }
+
+    
+    
+    @IBAction func AddButton(_ sender: Any) {
+        
+        print("Button Pressed")
+        if consclosed {
+            NavBarClosed()
+        }else {
+            NavBarOpen()
+        }
+    }
+    
+    
+    func NavBarOpen (){
+        UIView .animate(withDuration:0.3){
+            let open = CGAffineTransform(rotationAngle: 40)
+            self.Button.target = open as AnyObject
+            
+        }
         
     }
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-       
-
+    func NavBarClosed () {
+        UIView.animate(withDuration:0.3){
+            self.Height.constant  = 88
+            let closed =
+                CGAffineTransform(rotationAngle: 0)
+            self.Button.target = closed as AnyObject
+        }
     }
-
 }
